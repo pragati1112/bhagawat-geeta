@@ -1,0 +1,431 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #fafafa;
+  color: #333;
+}
+header {
+    background:linear-gradient(90deg, #3b0000, #7a1f00);
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+     header h1 {
+    font-family: 'Marcellus', serif;
+    font-size: 2rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.navbar-links {
+      margin-top: 5px;
+}
+
+.navbar-links a {
+    color: #fff;
+    margin: 0 12px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+    color: #ffe6b3;
+}
+
+.font1 {
+  font-family: 'Inter', sans-serif;
+}
+
+.font2 {
+  font-family: 'Marcellus', serif;
+}
+.fontmy1 {
+  font-family: "Source Serif 4", serif;
+}
+.fontmy2 {
+  font-family: "Noto Sans Display", sans-serif;
+}
+.fontmy3 {
+  font-family: "Vend Sans", sans-serif;
+}
+
+.card {
+  border: none;
+  border-radius: 20px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  color: #ff6a00;
+  font-weight: 600;
+}
+
+.btn-view {
+  background-color: #ff6a00;
+  color: #fff;
+  border: none;
+  border-radius: 50px;
+  padding: 8px 20px;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.btn-view:hover {
+  background-color: #e95c00;
+}
+
+details summary {
+  cursor: pointer;
+  color: #007bff;
+  font-weight: 600;
+}
+
+details p {
+  text-align: left;
+}
+
+  /* Banner Section */
+  .bg-banner {
+    position: relative;
+    height: 80vh;
+   background-image: url('https://wallpapercave.com/wp/wp2768264.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  }
+
+ .header-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.8rem;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+
+/* Glow & Shadow */
+.glow-text {
+  text-shadow:
+     0 0 3px #fff,
+     0 0 6px #ffd700,
+     0 0 10px #ff8c00,
+     0 0 15px #ff6a00;
+
+  /* Subtle glowing animation */
+  animation: glow 1.8s infinite alternate;
+}
+
+
+/* Glow Animation */
+@keyframes glow {
+  0% {
+    text-shadow:
+      0 0 3px #fff,
+      0 0 6px #ffd700,
+      0 0 10px #ff8c00,
+      0 0 15px #ff6a00;
+  }
+  50% {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #ffd700,
+      0 0 15px #ff8c00,
+      0 0 20px #ff6a00;
+  }
+  100% {
+    text-shadow:
+      0 0 3px #fff,
+      0 0 6px #ffd700,
+      0 0 10px #ff8c00,
+      0 0 15px #ff6a00;
+  }
+}
+
+  /* Overlay */
+  .bg-banner::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* dark overlay for better text visibility */
+    z-index: 1;
+  }
+
+  /* Banner Content */
+  .banner-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    padding: 20px;
+  }
+
+  .banner-title {
+    font-family: 'Marcellus', serif;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+  }
+
+  .banner-subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+  }
+
+  .banner-btn {
+    font-size: 1.2rem;
+    padding: 12px 30px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, #ff9800, #f44336);
+    border: none;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .banner-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+  }
+
+  @media (max-width: 768px) {
+    .banner-title {
+      font-size: 2.5rem;
+    }
+    .banner-subtitle {
+      font-size: 1.2rem;
+    }
+  }
+
+.banner-title {
+  font-family: 'Marcellus', serif;
+  font-size: 4rem;
+  color: #ffd700; /* Golden base */
+  text-align: center;
+  text-shadow:
+     0 0 5px #fff,
+     0 0 10px #ffe600,
+     0 0 20px #ff9800,
+     0 0 30px #ff6a00;
+  animation: glow 1.5s infinite alternate;
+}
+
+.banner-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.5rem;
+  color: #fff3c4; /* Subtle glowing cream */
+  text-align: center;
+  text-shadow:
+     0 0 3px #fff,
+     0 0 6px #ffe600,
+     0 0 10px #ff9800;
+  animation: glow 1.8s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #ffe600,
+      0 0 20px #ff9800,
+      0 0 30px #ff6a00;
+  }
+  50% {
+    text-shadow:
+      0 0 8px #fff,
+      0 0 15px #ffe600,
+      0 0 25px #ff9800,
+      0 0 35px #ff6a00;
+  }
+  100% {
+    text-shadow:
+      0 0 5px #fff,
+      0 0 10px #ffe600,
+      0 0 20px #ff9800,
+      0 0 30px #ff6a00;
+  }
+}
+
+
+/* Container background */
+#chapter-container {
+  
+  padding: 50px 20px;
+  justify-content: center;
+}
+
+/* Individual card */
+#chapter-container .card {
+  background: linear-gradient(145deg, #d08f0e, #6b2b00); /* Warm reddish gradient */
+  color: #ffd700; /* Golden text for glow contrast */
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Body */
+#chapter-container .card-body {
+  text-align: center;
+  padding: 20px;
+  font-family: 'Inter', sans-serif;
+}
+
+/* Card Titles */
+#chapter-container .card-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.5rem;
+  color: #ffd700;
+  text-shadow: 0 0 3px #fff, 0 0 6px #f4f2e3, 0 0 10px #ff9800;
+  margin-bottom: 15px;
+  transition: text-shadow 0.3s ease;
+}
+
+#chapter-container .card:hover .card-title {
+  text-shadow: 0 0 6px #fff, 0 0 12px #ffe600, 0 0 20px #ff9800, 0 0 30px #ff6a00;
+}
+
+/* Paragraphs */
+#chapter-container p, 
+#chapter-container details summary {
+  color: #fff3c4;
+  font-size: 0.95rem;
+}
+
+/* Summary toggle */
+#chapter-container details {
+  margin-top: 10px;
+}
+
+.card {
+  background: linear-gradient(145deg, #4f1a00, #6b2b00);
+  color: #ffd700;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.7);
+}
+
+.card-title {
+  text-shadow: 0 0 3px #fff, 0 0 6px #ffe600, 0 0 10px #ff9800;
+}
+
+.modal-content {
+  border-radius: 15px;
+}
+/* Modal Background & Text */
+.modal-content {
+  background: linear-gradient(145deg, #4f1a00, #6b2b00);
+  color: #ffd700;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Modal Header */
+.modal-header {
+  border-bottom: 1px solid #ffd700;
+}
+
+.modal-title {
+  font-family: 'Marcellus', serif;
+  font-size: 1.5rem;
+  color: #ffd700;
+  text-shadow: 0 0 3px #fff, 0 0 6px #ffe600, 0 0 10px #ff9800;
+}
+
+/* Close button */
+.btn-close {
+  filter: invert(100%);
+}
+
+/* Modal Body */
+.modal-body {
+  font-size: 1rem;
+  color: #fff3c4;
+  line-height: 1.6;
+}
+.modal-body strong {
+  color: #ffd700;
+  text-shadow: 0 0 3px #fff, 0 0 6px #ffe600;
+}
+
+/* Scrollable modal*/
+.modal-dialog {
+  max-width: 600px;
+
+}
+
+.modal-body {
+  max-height: 400px;
+  overflow-y: auto;
+}
+/* Scrollbar design */
+::-webkit-scrollbar {
+  width: 8px;              
+}
+
+::-webkit-scrollbar-track {
+  background: #3a1209;      
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ffb84d;    
+  border-radius: 10px;
+  border: 2px solid #3a1209;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ff9a00;    
+}
+.gita-footer {
+  background: linear-gradient(135deg, #4a1a08, #2b0d04);
+  color: #ffcc80;
+  font-family: "Marcellus", serif;
+  letter-spacing: 0.5px;
+  box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.gita-footer .social-links a {
+  color: #ffcc80;
+  font-size: 1.2rem;
+  transition: all 0.3s ease;
+}
+
+.gita-footer .social-links a:hover {
+  color: #ffb84d;
+  transform: translateY(-3px);
+}
+
+.gita-footer p {
+  color: #f5e1c1;
+}
+
+.gita-footer span {
+  color: #ffb84d;
+}
+
+
